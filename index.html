@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PageSwap is a campus book club and novel exchange. Swap a finished novel for a new one every Friday."
+    />
+    <link rel="icon" href="data:," />
+    <title>PageSwap | Book Club &amp; Novel Exchange</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-sheet">
+      <header>
+        <div class="header-inner">
+          <h1>PageSwap</h1>
+          <nav>
+            <a href="#home">Home</a>
+            <a href="#genres">Genres</a>
+            <a href="#swap">Swap</a>
+          </nav>
+          <button id="theme-toggle" type="button">Dark Mode</button>
+        </div>
+      </header>
+
+      <main>
+        <section id="home" class="hero">
+          <div class="hero-text">
+            <p class="eyebrow">PAGESWAP READING CIRCLE</p>
+            <h2>Swap novels. Defend your <em>hot takes.</em></h2>
+            <p>
+              Join our campus book club and novel exchange! Bring a finished novel to swap for a new one every Friday. Share your thoughts, defend your favorite plot twists, and discover new genres with fellow readers.
+            </p>
+            <p class="meetup-meta">
+              Fridays · 4:00 PM · CISLT
+            </p>
+            <p id="greeting"></p>
+          </div>
+          <div class="hero-media">
+            <img
+              src="images/tree.jpg"
+              alt="Student reading a novel under a tree"
+            />
+          </div>
+        </section>
+
+        <section id="genres" class="editorial-section">
+          <div class="section-header">
+            <p class="eyebrow">CURATED TABLE</p>
+            <h2>This Week's Genres</h2>
+          </div>
+
+          <div class="genres-showcase">
+            <img
+              src="images/novels.jpg"
+              alt="Stack of fiction novels on a table"
+              class="showcase-tall"
+            />
+            <div class="showcase-stack">
+              <img
+                src="images/bookmark.jpg"
+                alt="Open book with bookmark"
+                class="showcase-top"
+              />
+              <div class="intro-box">
+                <p>
+                  Explore a curated selection of genres for this week's book swap. From gripping mysteries to heartwarming romances, there's something for every reader to enjoy. Check out the list below and get ready to swap your favorite reads!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="cards" id="genres-list"></ul>
+        </section>
+
+        <section id="swap" class="editorial-section">
+          <div class="section-header">
+            <p class="eyebrow">NEXT MEETUP</p>
+            <h2>Register Your Swap Book</h2>
+          </div>
+
+          <div class="swap-grid">
+            <form id="swap-form">
+              <label for="book-title">Book Title</label>
+              <input type="text" id="book-title" placeholder="e.g. Nearly All the Men in Lagos Are Mad" />
+
+              <label for="book-author">Author</label>
+              <input
+                type="text"
+                id="book-author"
+                placeholder="e.g. Damilare Kuku"
+              />
+
+              <label for="book-genre">Genre</label>
+              <input
+                type="text"
+                id="book-genre"
+                placeholder="e.g. African & Diaspora Fiction"
+              />
+
+              <label for="reader-name">Your Name</label>
+              <input type="text" id="reader-name" placeholder="e.g. Raheemah" />
+
+              <button type="submit">Add Book to Meetup</button>
+              <p id="form-message" aria-live="polite"></p>
+            </form>
+
+            <div class="meetup-panel">
+              <img
+                src="images/notebook.jpg"
+                alt="Notebook and pen on a wooden desk"
+                class="panel-photo"
+              />
+              <h3>Coming to the next meetup</h3>
+              <p id="book-count"></p>
+              <ul class="meetup-list" id="meetup-list">
+                <li>
+                  Purple Hibiscus by Chimamanda Ngozi Adichie (African & Diaspora Fiction) - Registered by Eniola
+                </li>
+                <li>
+                  The Silent Patient by Alex Michaelides (Mystery, Thriller & Crime) - Registered by Daniel
+                </li>
+                <li>
+                  Broken: Not a Halal Love Story by Fatimah Bala (Contemporary Fiction) - Registered by Fareedah
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          PageSwap · Fridays at 4:00 PM, CISLT · Built by Raheemah for GirlsTech Bootcamp 1.0
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
